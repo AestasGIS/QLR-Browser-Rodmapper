@@ -20,8 +20,11 @@ eller netværks-share'en til at se ud, som de er placeret et andet sted i filsys
 
 Et eksempel: 
 
-Vi ønsker at filen "vigtig_dokument.txt" som er placeret i mappe H:\fælles_data" til at se ud, som om den er placeret i mappe 
-"C:\mine_dokumenter" under navnet "ikke_mit_eget_dokument.txt"
+Vi ønsker at mappen H:\common_gisdata" ser ud, som om den er placeret i mappe 
+"C:\gisdata" under navnet "Fælles filer". 
+ - "H:\common_gisdata" er den mappe, som allerede indeholder organisationens fælles QLR filer - dvs. opsat som QLR Browser "Base directory" 
+ - "C:\gisdata" er den mappe, som man ønsker brugeren skal placere sine egne qlr filer i.
+   
 
 Man starter en DOS kommandolinje op med administrator-rettigheder.... 
 
@@ -34,10 +37,25 @@ Det kun til selve oprettelsen af symlink'et hvor det er nødvendigt med denne re
 
 - ![alt text](https://github.com/AestasGIS/QLR-Browser-Rodmapper/blob/main/cmd.png "CMD startup")
 - Der vises et et skærmbillede, hvori man kan skrive dos- kommando.
-- Man skriver følgende kommando:
+- I skærmbilledet skrives følgende kommando:
 ```
-mklink ""C:\mine_dokumenter\ikke_mit_eget_dokument.txt" "H:\fælles_data\vigtig_dokument.txt" 
+mklink /D "C:\gisdata\Fælles filer" "H:\common_gisdata" 
 ```
+
+... Og så er vi færdige. Hvis man åbner en stifinder og navigerer til mappe "C:\gisdata\" kan man se, at der nu er en ny undermappe "Fælles filer" i denne mappe.
+
+Hvis man starter QGIS og benytter QLR browseren vil der være en ny mappe "Fælles filer". Hvis man navigerer ned i "Fælles filer" kan man se alle de fælles
+ qlr-filer som i realiteten er placeret på "H:\common_gisdata". 
+
+Slutteligt kan man benytte share definitioner uden noget drev-bogstav, såsom  
+
+For at få QLR Browser til at bruge den Det eneste, der mangler er nu at sætte 
+
+```
+mklink /D "C:\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
+```
+
+
 
 
 
