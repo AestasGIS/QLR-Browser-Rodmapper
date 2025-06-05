@@ -11,8 +11,9 @@ kunne placeres på et fælles drev.
  
 Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
 
-(Jeg administrer / bruger ikke selv QLR Browser længere og jeg ved faktisk ikke hvor mange, som stadigvæk benytter plugin'et. Men løsningen er rimelig ligetil, 
-så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden"; hvis det er, har I alle min tilladelse til at
+(Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. 
+
+Jeg har ingen anelse om nedenstående er "almindelig viden"; hvis det er, har I alle min tilladelse til at
 fnyse hånligt over min uvidenhed) 
 
 Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "symlink" facilitet. Symlink er en metode til at få filer og mapper placeret et sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
