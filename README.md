@@ -31,11 +31,9 @@ Det kun til selve oprettelsen af symlink'et hvor det er nødvendigt med denne re
 - I start menuen skriver man CMD. Der vises et udvalg af mulige programmer.
 - Man højreklikker på "Command Prompt". Der vises en undermenu ud for teksten.
 - Man klikker på "Run as administrator" (eller hvad det nu hedder på dansk) 
-- (Billede) 
-
+- ![alt text](https://github.com/AestasGIS/QLR-Browser-Rodmapper/blob/main/cmd.png "CMD startup")
 - Der vises et et skærmbillede, hvori man kan skrive dos- kommando.
 - Man skriver følgende kommando:
- 
 ```
 mklink ""C:\mine_dokumenter\ikke_mit_eget_dokument.txt" "H:\fælles_data\vigtig_dokument.txt" 
 ```
