@@ -14,7 +14,7 @@ Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen
 (Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden"; hvis det er, har I alle min tilladelse til at
 fnyse hånligt over min uvidenhed) 
 
-Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "symlink" facilitet. Symlink er en metode til at få filer og mapper placeret et sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
+Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "symlink" facilitet. Symlink er en metode til at få filer og mapper placeret ét sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
 
 ## Et Windows eksempel: 
 
