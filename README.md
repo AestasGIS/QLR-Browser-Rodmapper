@@ -23,7 +23,6 @@ Vi ønsker at få mappen H:\common_gisdata" til at se ud, som om den er placeret
  - "H:\common_gisdata" er den mappe, som allerede indeholder organisationens fælles QLR filer - dvs. pt. opsat som QLR Browser "Base directory" 
  - "C:\gisdata" er den mappe, som man ønsker brugeren skal placere sine egne qlr filer i.
    
-
 Man starter en DOS kommandolinje op med administrator-rettigheder.... 
 
 (Og det er så her, at mange skal have fat i deres IT-administrator til at give dem denne rettighed. 
