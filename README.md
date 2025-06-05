@@ -46,8 +46,18 @@ mklink /D "C:\gisdata\Fælles filer" "H:\common_gisdata"
 I QGIS opsættes QLR Browser'ens base directory til "C:\gisdata". Herefter vil der i QLR browseren vises en række lokale qlr filer samt en ny mappe "Fælles filer". Hvis man navigerer ned i "Fælles filer" kan man se alle de fælles
  qlr-filer som i realiteten er placeret på "H:\common_gisdata". 
 
-Slutteligt kan man benytte share definitioner uden noget drev-bogstav, såsom  
+Tip !!
+
+Man benytte share definitioner uden noget drev-bogstav, såsom  
 
 ```
 mklink /D "C:\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
+```
+
+Man kan placere sin lokale qlr mappe sammen med resten af QGIS opsætningen: 
+
+```
+mkdir %APPDATA%\QGIS\QGIS3\gisdata
+REM kopier brugerens egne qlr filer ned i denne mappe
+mklink /D "%APPDATA%\QGIS\QGIS3\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
 ```
