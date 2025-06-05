@@ -1,6 +1,6 @@
 # QLR-Browser-Rodmapper
 
-Oprettelse af flere rodmapper til QLR Browser.
+Oprettelse af flere rodmapper i QGIS plugin "QLR Browser".
 
 Tilbage i 2015 gik en række kommuner sammen om at få firmaet Septima til at udvikle "QLR Browser", et plugin til administration af QLR filer. 
 
@@ -17,7 +17,7 @@ fnyse hånligt over min uvidenhed)
 
 Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "symlink" facilitet. Symlink er en metode til at få filer og mapper placeret et sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
 
-Et Windows eksempel: 
+## Et Windows eksempel: 
 
 Vi ønsker at få mappen H:\common_gisdata" til at se ud, som om den er placeret i mappe "C:\gisdata" under navnet "Fælles filer". 
  - "H:\common_gisdata" er den mappe, som allerede indeholder organisationens fælles QLR filer - dvs. pt. opsat som QLR Browser "Base directory" 
@@ -44,7 +44,7 @@ mklink /D "C:\gisdata\Fælles filer" "H:\common_gisdata"
 
 I QGIS opsættes QLR Browser'ens base directory til "C:\gisdata". Herefter vil der i QLR browseren vises en række lokale qlr filer fra C:\gisdata samt en ny mappe "Fælles filer". Hvis man navigerer ned i "Fælles filer" kan man se alle de fælles qlr-filer som i realiteten er placeret på "H:\common_gisdata". 
 
-Tip !!
+## Tip !!
 
 Man benytte share definitioner uden noget drev-bogstav, såsom  
 
@@ -59,6 +59,17 @@ mkdir %APPDATA%\QGIS\QGIS3\gisdata
 REM kopier brugerens egne qlr filer ned i denne mappe
 mklink /D "%APPDATA%\QGIS\QGIS3\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
 ```
+
+Man benytte opsætte mange symlinks til forskellige fællesmapper, såsom  
+
+```
+mklink /D "C:\gisdata\Teknisk afdeling" "\\my_server\my_share\comp_tek" 
+mklink /D "C:\gisdata\Borgmesterens kontor" "\\my_server\my_share\burgermeister_data" 
+mklink /D "C:\gisdata\Renovation" "\\my_server\my_share\small_blue_men" 
+```
+
+
+
 
 Happy GISing !
 
