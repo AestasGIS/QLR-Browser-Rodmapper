@@ -59,7 +59,7 @@ REM kopier brugerens egne qlr filer ned i denne mappe
 mklink /D "%APPDATA%\QGIS\QGIS3\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
 ```
 
-Man benytte opsætte mange symlinks til forskellige fællesmapper, såsom  
+Man kan opsætte mange symlinks til forskellige fællesmapper, såsom  
 
 ```
 mklink /D "C:\gisdata\Teknisk afdeling" "\\my_server\my_share\comp_tek" 
