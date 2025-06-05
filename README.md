@@ -19,7 +19,7 @@ Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "sy
 
 ## Et Windows eksempel: 
 
-Vi ønsker at få mappen H:\common_gisdata" til at se ud, som om den er placeret i mappe "C:\gisdata" under navnet "Fælles filer". 
+Vi ønsker at få mappen "H:\common_gisdata" til at se ud, som om den er placeret i mappe "C:\gisdata" under navnet "Fælles filer". 
  - "H:\common_gisdata" er den mappe, som allerede indeholder organisationens fælles QLR filer - dvs. pt. opsat som QLR Browser "Base directory" 
  - "C:\gisdata" er den mappe, som man ønsker brugeren skal placere sine egne qlr filer i.
    
