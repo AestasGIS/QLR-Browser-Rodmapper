@@ -6,7 +6,7 @@ Tilbage i 2015 gik en række kommuner sammen om at få firmaet Septima til at ud
 
 QLR Browser indeholder en række smarte faciliteter i forhold til den normale QGIS Datahåndtering, men har altid manglet en enkelt funktion:
 Allerede i starten af 2016 var der et ønske om at kunne tilknytte flere "rodmapper" til QLR Browser, så man f.eks. kunne have én "privat" 
-mappe til sine egne qlr-filer - og én fælles mappe til organisationens fælles data. Den private mappe kan eks. placeres på brugerens lokale harddisk og fællesmappen 
+mappe til sine egne qlr-filer - og én fælles mappe til organisationens fælles data. Den private mappe kunne eks. placeres på brugerens lokale harddisk og fællesmappen 
 kunne placeres på et fælles drev.
  
 Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
