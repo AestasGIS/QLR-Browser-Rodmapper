@@ -2,7 +2,7 @@
 
 Oprettelse af flere rodmapper i QGIS plugin "QLR Browser".
 
-Tilbage i 2015 gik en række kommuner sammen om at få firmaet Septima til at udvikle "QLR Browser", et plugin til administration af QLR filer. 
+Tilbage i 2015 gik en række kommuner sammen om at få firmaet Septima til at udvikle "QLR Browser", et plugin til organisering og administration af QLR filer. 
 
 QLR Browser indeholder en række smarte faciliteter i forhold til den normale QGIS Datahåndtering, men har altid manglet en enkelt funktion:
 Allerede i starten af 2016 var der et ønske om at kunne tilknytte flere "rodmapper" til QLR Browser, så man f.eks. kunne have én "privat" 
