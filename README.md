@@ -12,9 +12,9 @@ kunne placeres på et fælles drev.
 Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
 
 (Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden". Hvis det er, har i min tilladelse til at
-fnyse hånligt over min uvidenhed :-/) 
+fnyse hånligt over min uvidenhed) 
 
-Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets *"symlink"* facilitet. Symlink er en metode til at få filer og mapper placeret ét sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
+Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets *"symlink"*  - Symbolic Links - facilitet. Symlink er en metode til at få filer og mapper placeret ét sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
 
 ## Et Windows eksempel: 
 
@@ -37,6 +37,7 @@ Det kun til selve oprettelsen af symlink'et hvor det er nødvendigt med denne re
 ```
 mklink /D "C:\gisdata\Fælles filer" "H:\common_gisdata" 
 ```
+NB! Hvis du har et Windows 11 operativsystem, kan du udføre mklink kommandoen *uden* administrator rettigheder - Bare start "cmd" og udfør kommandoen
 
 ... Og så er vi stort set færdige. Hvis man åbner en stifinder og navigerer til mappe "C:\gisdata\" kan man se, at der nu er en ny undermappe "Fælles filer" i denne mappe.
 
@@ -53,15 +54,18 @@ mklink /D "C:\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata"
 Man kan placere sin lokale qlr mappe sammen med resten af QGIS opsætningen: 
 
 ```
+REM Opret gisdatamappe
 mkdir %APPDATA%\QGIS\QGIS3\gisdata
 REM kopier brugerens egne qlr filer ned i denne mappe
+REM copy ...
+REM Opret symlink
 mklink /D "%APPDATA%\QGIS\QGIS3\gisdata\Fælles filer" "\\my_server\my_share\common_gisdata" 
 ```
 
-Man kan opsætte mange symlinks til forskellige fællesmapper, såsom  
+Man kan opsætte mange symlinks til forskellige fællesmapper, såsom:
 
 ```
-mklink /D "C:\gisdata\Teknisk afdeling" "\\my_server\my_share\comp_tek" 
+mklink /D "C:\gisdata\Teknisk afdeling" "\\my_server\my_share\comp_snafu" 
 mklink /D "C:\gisdata\Borgmesterens kontor" "\\my_server\my_share\burgermeister_data" 
 mklink /D "C:\gisdata\Renovation" "\\my_server\my_share\small_blue_men" 
 ```
