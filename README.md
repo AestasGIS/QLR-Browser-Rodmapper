@@ -70,7 +70,7 @@ mklink /D "C:\gisdata\Borgmesterens kontor" "\\my_server\my_share\burgermeister_
 mklink /D "C:\gisdata\Renovation" "\\my_server\my_share\small_blue_men" 
 ```
 ## Aber Dabei !!
-Hvis du kopier mappen som indeholder linket, ændres linket til et almindelig - tom - mappe i kopien. Så der er nødvendigt at genskabe links efter kopiering ved at slette den tomme mappe og genkøre mklink kommandoen. 
+Hvis du kopier mappen som indeholder linket, ændres linket til et almindelig - tom - mappe i kopien. Så er det nødvendigt at genskabe links efter kopiering ved at slette den tomme mappe og genkøre mklink kommandoen. 
 
 Happy GISing !
 
