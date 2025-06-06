@@ -75,4 +75,12 @@ Hvis du kopier mappen som indeholder linket, ændres linket til et almindelig - 
 
 Happy GISing !
 
+Med venlig hilsen
+
+Bo Victor Thomsen
+
+Civ.Ing., GIS- og Database-konsulent
+
+AestasGIS Danmark
+
 Kilder: https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/#how-to-create-symbolic-links-with-mklink
