@@ -11,10 +11,10 @@ kunne placeres på et fælles drev.
  
 Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
 
-(Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden"; hvis det er, har I alle min tilladelse til at
-fnyse hånligt over min uvidenhed) 
+(Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden". Hvis det er, har i min tilladelse til at
+fnyse hånligt over min uvidenhed :-/) 
 
-Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets "symlink" facilitet. Symlink er en metode til at få filer og mapper placeret ét sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
+Løsningen baserer sig på brugen af Windows / Linux / IOS operativsystemets *"symlink"* facilitet. Symlink er en metode til at få filer og mapper placeret ét sted på harddisken / netværket til at se ud, som de er placeret et andet sted i filsystemet.
 
 ## Et Windows eksempel: 
 
@@ -66,8 +66,6 @@ mklink /D "C:\gisdata\Borgmesterens kontor" "\\my_server\my_share\burgermeister_
 mklink /D "C:\gisdata\Renovation" "\\my_server\my_share\small_blue_men" 
 ```
 
-
-
-
 Happy GISing !
 
+Kilder: https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/#how-to-create-symbolic-links-with-mklink
