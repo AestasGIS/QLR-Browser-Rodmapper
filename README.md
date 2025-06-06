@@ -9,7 +9,7 @@ Allerede i starten af 2016 var der et ønske om at kunne tilknytte flere "rodmap
 mappe til sine egne qlr-filer - og én fælles mappe til organisationens fælles data. Den private mappe kunne eks. placeres på brugerens lokale harddisk og fællesmappen 
 kunne placeres på et fælles drev.
  
-Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
+Jeg har nu siddet og nørdet lidt til "QGIS contributor meeting 2025" i Norrköping med brugen af QLR Browser - og fundet en mulighed for at implementere ønsket om flere rodmapper med den *nuværende* udgave af QLR Browser.
 
 (Jeg administrerer / bruger ikke selv QLR Browser længere. Men løsningen er rimelig ligetil, så derfor har jeg skrevet denne vejledning. Jeg har ingen anelse om nedenstående er "almindelig viden". Hvis det er, har i min tilladelse til at
 fnyse hånligt over min uvidenhed) 
