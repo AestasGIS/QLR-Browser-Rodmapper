@@ -32,6 +32,7 @@ Det kun til selve oprettelsen af symlink'et hvor det er nødvendigt med denne re
 - Man klikker på "Run as administrator" (eller hvad det nu hedder på dansk)
 
 - ![alt text](https://github.com/AestasGIS/QLR-Browser-Rodmapper/blob/main/cmd.png "CMD startup")
+- Du bliver bedt om at indtaste dit username/password.
 - Der vises et et skærmbillede, hvori man kan skrive cmd kommandoer.
 - I skærmbilledet skrives følgende kommando:
 ```
